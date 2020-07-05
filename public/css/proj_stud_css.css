@@ -1,0 +1,93 @@
+body{
+    background-image: linear-gradient(to top right,rgba(37, 16, 223, 0.788),rgba(17, 224, 110, 0.877));
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+}
+#id1{
+    text-align: center;
+}
+h1{
+    padding-top: 5px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.container1 {
+    background-color:whitesmoke ;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 20px;
+    box-shadow: 20px 20px 50px lightgray inset;
+    font-size: 15px;
+  }
+
+  div{
+    margin: 10px;
+    font-size: 15px;
+  }
+  
+input{
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    border:0px;
+}
+button{
+    margin-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border:0;
+    margin-bottom: 10px;
+    box-shadow: 20px 20px 50px rgb(65, 125, 236) inset;
+}
+button:hover{
+    box-shadow: 5px 5px lightgrey;
+}
+label{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px 60px;
+    align-items: left;
+}
+.div1 {
+    display: inline-block;
+}
+.nameroll{
+    margin-left: 60px;
+}
+.examdate{
+    margin-left: 10px;
+    padding-left: 34px;
+    position: relative;
+}
+
+.flex-container1{
+    display: flex;
+    flex-direction: row;
+    /* align-content: space-around; */
+}
+.container2 {
+    background-color:whitesmoke ;
+    width: 500px;
+    height:350px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 20px 20px 50px lightgray inset;
+  }
+  #m1,#m2,#m3{
+    margin-left: 60px;
+}

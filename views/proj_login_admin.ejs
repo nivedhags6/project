@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/../css/proj_login_style.css" type="text/css">
+</head>
+<body> 
+    <div class="flex-container">
+        <div class="container1">
+            <img src="/../images/logo.JPG">
+    <h1 id="id1" >Member Login</h1>
+    <form class="form1" action="/execute_login_admin"  method ="POST">
+        <div >
+                <input type="email" placeholder="Email" id="email" name="Email">
+        </div>
+        <div >
+            <input type="password" placeholder="Password" id="pass" name="password">
+        </div>
+        <p style="color:red;"> <%= er %></p>
+        <div >
+        <button >Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+<script>
+    function login(){
+        var email=document.getElementById("email").value;
+        var pass=document.getElementById("pass").value;
+
+        if(email === "123@gmail.com" && pass === "123")
+        {
+            return true;
+        }
+        else{
+            alert("Email id & password does not match");
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

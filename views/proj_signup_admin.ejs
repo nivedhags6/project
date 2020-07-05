@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Resigter</title>
+    <link rel="stylesheet" type="text/css" href="/../css/proj_signup_css.css">
+</head>
+<body>
+    <div class="flex-container">
+    <div class="container1">
+        <img src="/../images/logo_register.JPG">
+            <h1 id="id1" >REGISTER</h1>
+    <form class="form1" action="/execute_register_admin" method="POST">
+        <div class="div1">
+           <input type="text" name="Uname" placeholder="Name" class="nameroll" required>
+        </div>
+        <div class="div1">
+        <input type="email" name="Email" placeholder="Email" class="nameroll" required>
+        </div>
+        <div class="div1">
+        <input type="password" id="pass" name="password" placeholder="Password" class="pass1" required>
+        </div>
+        <div class="div1">
+        <input type="password" id="cpass" name="cpassword" placeholder="Confirm Password" class="pass2" required>
+        </div>
+        <div> Gender: 
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender"value="Others">Others
+        </div>
+        <div>
+        <button onclick="register()">Register</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="/../js/script_reg.js">
+</script>
+</body>
+</html>

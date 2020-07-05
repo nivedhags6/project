@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CGPA Calculation</title>
+    <link rel="stylesheet" type="text/css" href="/../css/proj_stud_css.css">
+</head>
+<body>
+<div class="flex-container">
+    <div class="container1" >
+            <h1 id="id1" >Mark Entry Sheet</h1>
+    </div>
+    <form action="/calculate" method ="POST">
+        <div class="flex-container1">
+            <div class="container2">
+                <h1>Student Details</h1>
+                <div class="div1">
+                    Name:<input type="text" name="Uname" placeholder="Name" class="nameroll">
+                </div>
+                <div class="div1">
+                    Rollno:<input type="text" name="rollno" placeholder="Roll Number" class="nameroll">
+                </div>
+                <div class="div1">
+                    Date of Exam: <input type="date" name="examdate" class="examdate">
+                </div>
+            </div>
+            <div class="container2">
+                <h1>Mark Details</h1>
+                <div class="div1">
+                    Subject 1 Mark: <input type="text" name="mark1" placeholder="Subject 1 Mark" id="m1">
+                </div>
+                <div class="div1">
+                    Subject 2 Mark: <input type="text" name="mark2" placeholder="Subject 2 Mark" id="m2">
+                </div>
+                <div class="div1">
+                    Subject 3 Mark: <input type="text" name="mark3" placeholder="Subject 3 Mark" id="m3">
+                </div>
+                <div>
+                    <!-- <button onclick="cgpa()">Calculate</button> -->
+                    <button >Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="/../js/script.js">
+</script>
+</body>
+</html>

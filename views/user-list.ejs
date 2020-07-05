@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Marksheet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/../css/user-css.css" type="text/css">
+</head>
+<body>
+    <div class="table-data" id="flex-container">
+        <div class="container1">
+    <h2>Mark sheet</h2>
+        </div>
+        <div class="container1">
+
+    <table border="1">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Date</th>
+            <th>Email</th>
+            <th>Test 1</th>
+            <th>Test 2</th>
+            <th>Test 3</th>
+            <th>Average Score</th>
+            <!-- <th>Edit</th>
+            <th>Delete</th> -->
+        </tr>    
+        <%         if(userData.length!=0){%>
+        <%var i=1;%>
+        <%userData.forEach(function(data){ %>
+        <tr>
+            <td><%=i; %></td>
+            <td><%=data.Student_Name %></td>
+            <td><%=data.Student_Rollno %></td>
+            <% var datemonth=data.Date_of_Exam.getMonth()+1 %>
+            <td><%=data.Date_of_Exam.getDate()+ "/" + datemonth + "/" + data.Date_of_Exam.getFullYear() %></td>
+            <td><%=data.Student_Email_ID %></td>
+            <td><%=data.Test_1 %></td>
+            <td><%=data.Test_2 %></td>
+            <td><%=data.Test_3 %></td>
+            <td><%=Math.round((data.Test_1+data.Test_2+data.Test_3)/3)%></td>
+            <!-- <td><a href="/user/edit/<%=data.id%>">Edit</a></td>
+            <td><a href="/user/delete/<%=data.id%>">Delete</a></td> -->
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="9">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+    </div>
+    </div>
+</body>
+</html>
